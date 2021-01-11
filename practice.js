@@ -4,9 +4,9 @@
 // Make a variable named greeting with a data type of string that says "Hi" (with double quotes)
 // After the first variable, make a variable named farewell with a data type of string that says 'Goodbye' (with single quotes)
 
-// Code here
+const greeting = "Hi"
 
-
+const farewell = 'Goodbye'
 
 //////////////////PROBLEM 2////////////////////
 
@@ -14,34 +14,30 @@
 // Next, make a variable called userName with data types of string that is your name
 // Concatenate hello and userName together and store the result in a variable called salutation
 
-//Code here
+const hello = 'Hello'
 
+const userName = 'Austin'
 
+const salutation = hello + userName
 
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called seven that has a number data type with the value of 7
 
-//Code here
-
-
+const seven = 7
 
 //////////////////PROBLEM 4////////////////////
 
 // Make a variable called money with a value equal to the amount you wish to have in your bank account in 2 years
 // This datatype should be a number
 
-//Code here
-
-
+const money = 1000000
 
 //////////////////PROBLEM 5////////////////////
 
 // Make a variable called awesome and give it a value of the boolean data type true
 
-//Code here
-
-
+const awesome = true
 
 //////////////////PROBLEM 6////////////////////
 
@@ -52,18 +48,34 @@ let myCar = "Jeep";
 
 // Set the variable myCar to be null
 
-
-//Code here
-
-
+myCar = null
 
 //////////////////PROBLEM 7////////////////////
 
 // Create a variable called users which should be an array with 4 items in it
 // Each item should be an object, and each object should have 2 properties: name (string) and age (number)
 
-//Code here
+const dan = {
+  name: 'Dan',
+  age: 31
+}
 
+const hank = {
+  name: 'Hank',
+  age: 26
+}
+
+const sierra = {
+  name: 'Sierra',
+  age: 24
+}
+
+const walker = {
+  name: 'Walker',
+  age: 2
+}
+
+const users = [dan, hank, sierra, walker]
 
 
 //////////////////PROBLEM 8////////////////////
@@ -73,8 +85,20 @@ let myCar = "Jeep";
 // Each property will have a corresponding value which will be an object with one property called "hobbies"
 // Each hobbies property will have a corresponding value which will be an object
 
-//Code here
-
+const family = {
+  Austin: {
+    hobbies: {
+    }
+  },
+  Sierra: {
+    hobbies: {
+    }
+  },
+  Walker: {
+    hobbies: {
+    }
+  }
+}
 
 
 //////////////////PROBLEM 9////////////////////
@@ -82,7 +106,7 @@ let myCar = "Jeep";
 // Create a variable called gameScores which should be an array with 3 items in it
 // Each item should be an array with 2 items (numbers) in each array
 
-//Code here
+const gameScores = [[2, 3], [4, 5], [6, 7]]
 
 
 
@@ -91,7 +115,20 @@ let myCar = "Jeep";
 // Create a variable called people which should be an array of 3 objects
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
 
-//Code here
+const people = [{
+  name: 'Sarah',
+  gender: 'Female',
+  height: 5.5
+}, {
+  name: 'Walter',
+  gender: 'Male',
+  height: 4.8
+}, {
+  name: 'Jacob',
+  gender: 'Male',
+  height: 6.4
+}
+]
 
 
 
@@ -100,7 +137,11 @@ let myCar = "Jeep";
 // Create a variable called cowboy which should be an object
 // This object should have 3 properties: name (string), state (string), favoriteCountrySong (string)
 
-//Code here
+const cowboy = {
+  name: 'Brick',
+  state: 'Tulsa, Oklahoma',
+  favoriteCountrySong: 'Dirt on My Boots'
+}
 
 
 
@@ -108,15 +149,15 @@ let myCar = "Jeep";
 
 // Do not edit the code below.
 const spaceship = {
-	fuel: "liquid hydrogen",
-	topSpeed: 36000,
-	fuelLevel: 100,
-	altitude: 0,
+  fuel: "liquid hydrogen",
+  topSpeed: 36000,
+  fuelLevel: 100,
+  altitude: 0,
 };
 
 function launch() {
-	spaceship.fuelLevel -= 30;
-	spaceship.altidude += 1000;
+  spaceship.fuelLevel -= 30;
+  spaceship.altidude += 1000;
 }
 // Do not edit the code above.
 
@@ -130,7 +171,7 @@ function launch() {
 //   the function launch (provided for you)
 
 
-//Code here
+const dataTypes = [42, 'meaning', true, [1, 2, 3, 4, 5], spaceship, launch]
 
 
 
@@ -138,23 +179,25 @@ function launch() {
 
 // Edit the function called "sum" so that when it is invoked, it returns the sum of its parameters num1 and num2
 
-function sum(num1, num2){
-  return // Code here
+function sum(num1, num2) {
+  return num1 + num2
 };
-  
 
-  
+
+
 //////////////////PROBLEM 14////////////////////
-  
+
 // Create two variables number1 and number2 and assign them number values
 
-// Code here
+const number1 = 3
+
+const number2 = 5
 
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
-function multiply() {
-  return // Code here
+function multiply(num1, num2) {
+  return number1 * number2
 };
 
 
@@ -169,9 +212,9 @@ let food = 'pizza';
 // Edit the function favFood so that when it is invoked it returns the string "My favorite food is pizza"
 // In your solution code, use template strings (not concatenation) and use the food variable provided
 
-function favFood(){
-  return // Code here
-};
+function favFood() {
+  return `My favorite food is ${food}`
+}
 
 
 
@@ -186,8 +229,8 @@ let theBoss;
 // Edit the function assignName so that when it is invoked with the variable theName passed in as an argument,
 // the function assigns the value of theName to theBoss variable
 
-function assignName(name){
-  // Code here
+function assignName(theName) {
+  return theBoss = theName
 };
 
 
@@ -206,8 +249,8 @@ let user = {
 // Using the user object provided,
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
-function getName(userObj){
-  return // Code here
+function getName(userObj) {
+  return user.name
 };
 
 
@@ -218,7 +261,7 @@ function getName(userObj){
 let calendar = {
   months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
   weekDays: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-  days: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+  days: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
 }
 // Do not edit the code above.
 
@@ -228,8 +271,8 @@ let calendar = {
 // In your solution, use the correct notation to access the value "Tuesday" and do not simply return the string "Tuesday"
 // Make sure you are accessing it from the weekDays array of the calendar object
 
-function getWeekDay(calendar){
-  return // Code here
+function getWeekDay(calendar) {
+  return calendar.weekDays[2]
 }
 
 
@@ -238,7 +281,9 @@ function getWeekDay(calendar){
 
 // Create a function called "fn" that takes in a parameter and returns that parameter
 
-// Code here
+const fn = (name) => {
+  return name
+}
 
 
 
@@ -253,23 +298,28 @@ let lastName = "Jones";
 // Create a function called createName that takes in no parameters and returns the result of concatenating firstName and lastName (provided)
 // The returned value should include a space between the first and last names and should use concatenation (not template strings)
 
-// Code here
-
+const createName = () => {
+  return firstName + ' ' + lastName
+}
 
 
 //////////////////PROBLEM 21////////////////////
 
 // Create a function called showMeSeven that returns the number 7
 
-// Code here
-
+const showMeSeven = () => {
+  return 7
+}
 
 
 //////////////////PROBLEM 22////////////////////
 
 // Create a function called multiplier that takes two parameters (numbers) and returns the product of the two parameters
 
-// Code here
+const multiplier = (num1, num2) => {
+  return num1 * num2
+}
+
 
 
 
@@ -279,7 +329,9 @@ let lastName = "Jones";
 // This function should return a string that is the result of concatenating the greeting and name parameters
 // The returned value should include a space between the greeting and name parameters
 
-// Code here
+const sayHello = (greeting, name) => {
+  return `${greeting} ${name}`
+}
 
 
 
@@ -287,10 +339,15 @@ let lastName = "Jones";
 
 // Create a function called makeExercise that takes two parameters: exerciseName (string) and duration (number)
 // This function should return an object with two key-value pairs:
-  // the first property should be exerciseName with the value of the first parameter
-  // the second property should be duration with the value of the second parameter
+// the first property should be exerciseName with the value of the first parameter
+// the second property should be duration with the value of the second parameter
 
-// Code here
+const makeExercise = (exerciseName, duration) => {
+  return obj = {
+    exerciseName,
+    duration,
+  }
+}
 
 
 
@@ -305,8 +362,11 @@ let age = "TBD";
 // Use the if and else keywords in your solution
 // The variable age will be changed during testing
 
-function isOldEnough(){
-  // Code here
+function isOldEnough() {
+  if (age >= 21) {
+    return 'old enough'
+  }
+  return 'not yet'
 };
 
 
@@ -322,8 +382,11 @@ let workEthic = "TBD";
 // Use the if and else keywords in your solution
 // The variable workEthic will be changed during testing
 
-function successPredictor(){
-  // Code here
+function successPredictor() {
+  if (workEthic === 'great') {
+    return 'success at DevMountain'
+  }
+  return 'failure at DevMountain'
 };
 
 
@@ -339,9 +402,12 @@ let cookieType = "TBD";
 // Use the if and else keywords in your solution
 // The variable cookieType will be changed during testing
 
-function eatOrTrash(){
-  // Code here
-};
+function eatOrTrash() {
+  if (cookieType === 'raisin') {
+    return 'throw in trash'
+  }
+  return 'eat'
+}
 
 
 
@@ -357,9 +423,14 @@ let yourTeamScore = "TBD";
 // Use the if and else keywords in your solution
 // The myTeamScore and yourTeamScore variables will be changed during testing
 
-function finalScore(){
-  // Code here
-};
+function finalScore() {
+  if (myTeamScore > yourTeamScore) {
+    return 'we are the champions'
+  }
+  return ':('
+}
+
+
 
 
 
@@ -371,15 +442,20 @@ age = "TBD";
 
 
 // Inside the findCorrectTransportation function, write an if/else statement that will check the age variable and return the correct response according to the following criteria:
-  // if age is from 3 to 7, return "tricycle"
-  // if age is from 8 to 15, return "bicycle"
-  // if age is greater than 15, return "car"
+// if age is from 3 to 7, return "tricycle"
+// if age is from 8 to 15, return "bicycle"
+// if age is greater than 15, return "car"
 
 // Use the if and else keywords in your solution
 // The variable age will always be a number and will be changed during testing
 
-function findCorrectTransportation(){
-  // Code here
+function findCorrectTransportation() {
+  if (age >= 3 && age <= 7) {
+    return 'tricycle'
+  } else if (age <= 15) {
+    return 'bicycle'
+  }
+  return 'car'
 };
 
 
@@ -393,15 +469,18 @@ let temp = "TBD";
 
 
 // Inside the doIGetIceCream function, write an if/else statement that will check the cash and temp variables and return the correct response according to the following criteria:
-  // if temp is equal to "hot" and money is true, return "Get Ice Cream!"
-  // otherwise return "Save up for another day."
+// if temp is equal to "hot" and money is true, return "Get Ice Cream!"
+// otherwise return "Save up for another day."
 
 // Use the if and else keywords in your solution
 // The variable age will always be a number and will be changed during testing
 
-function doIGetIceCream(){
-  // Code here
-};
+function doIGetIceCream() {
+  if (temp === 'hot' && cash) {
+    return 'Get Ice Cream!'
+  }
+  return 'Save up for another day.'
+}
 
 
 
@@ -419,9 +498,11 @@ let work = "TBD";
 // Use the if and else keywords in your solution
 // The chores and work variables will always be true or false and will be changed during testing
 
-function doIHaveFreeTime(){
-  // Code here
-};
+function doIHaveFreeTime() {
+  if (!work || !chores) {
+    return 'free time!'
+  }
+}
 
 
 
@@ -441,8 +522,10 @@ let brakes = "TBD";
 // The currentSpeed variables will always be a string and will be changed during testing
 // The brakes variables will always be a boolean and will be changed during testing
 
-function setCrash(){
-  // Code here
+function setCrash() {
+  if (currentSpeed === 'fast' && !brakes) {
+    crash = true
+  }
 };
 
 
@@ -464,7 +547,13 @@ user = {
 // Use the if and else keywords in your solution
 // The arguments passed into makePurchase will always be numbers and will be changed during testing
 
-// Code here
+const makePurchase = (priceOfItems) => {
+  if (priceOfItems <= user.total) {
+    return user.total = user.total - priceOfItems
+  } else {
+    return 'not enough funds'
+  }
+}
 
 
 
@@ -474,12 +563,12 @@ user = {
 let hunger;
 let fatigue;
 
-function eat(){
+function eat() {
   hunger = "gone";
   return "yum yum";
 }
 
-function sleep(){
+function sleep() {
   fatigue = "gone";
   return "zzz zzz zzz";
 }
@@ -487,12 +576,20 @@ function sleep(){
 
 
 // Write a function called decisionMaker that takes two parameters hungry and tired and and reacts according to the following criteria:
-  // if hungry is true and tired is false, invoke the eat function (provided)
-  // if hungry is false and tired is true, invoke the sleep function (provided)
-  // otherwise, return the string "undecided"
+// if hungry is true and tired is false, invoke the eat function (provided)
+// if hungry is false and tired is true, invoke the sleep function (provided)
+// otherwise, return the string "undecided"
 
 // In your solution, be sure to use the logical NOT operator (bang operator) instead of using true or false keywords
 // Use the if and else keywords in your solution
 // The arguments passed into decisionMaker will always be true or false and will be changed during testing
 
-// Code here
+const decisionMaker = (hungry, tired) => {
+  if (hungry && !tired) {
+    return eat()
+  } else if (!hungry && tired) {
+    return sleep()
+  } else {
+    return 'undecided'
+  }
+}
